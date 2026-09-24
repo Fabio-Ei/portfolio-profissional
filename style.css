@@ -374,6 +374,18 @@ button:focus-visible {
     border-radius: var(--raio-card);
 
     box-shadow: var(--sombra-card);
+
+    transition:
+        transform var(--transicao),
+        box-shadow var(--transicao),
+        border-color var(--transicao);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+    border-color: var(--cor-destaque);
 }
 
 .project-card > img {
